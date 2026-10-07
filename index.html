@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ই-সলিউশন পয়েন্ট | ডিজিটাল ও অনলাইন সেবা কেন্দ্র</title>
+
+  <meta name="description" content="ই-সলিউশন পয়েন্ট - উচাখিলা বাজার স্কুল গেইট, ঈশ্বরগঞ্জ, ময়মনসিংহ। অনলাইন আবেদন, প্রিন্ট, ফটোকপি, স্ক্যান, চাকরি ও শিক্ষা সংক্রান্ত ডিজিটাল সেবা।">
+  <meta name="keywords" content="ই-সলিউশন পয়েন্ট, Uchakhila, ঈশ্বরগঞ্জ, Mymensingh, অনলাইন সেবা, কম্পিউটার সেবা">
+  <meta name="author" content="ই-সলিউশন পয়েন্ট">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Noto Sans Bengali", "SolaimanLipi", Arial, sans-serif;
+      line-height: 1.7;
+      color: #172033;
+      background: #f7faff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+      background: #ffffff;
+      box-shadow: 0 3px 20px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      min-height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0758c9;
+    }
+
+    .logo span {
+      color: #00a878;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+
+    nav a {
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: #0758c9;
+    }
+
+    .menu-btn {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(4,75,165,.96), rgba(0,157,126,.92));
+      color: white;
+      padding: 95px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero:after {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.08);
+      right: -150px;
+      top: -150px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 780px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #ffd43b;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin-bottom: 30px;
+      opacity: .95;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      transition: .3s;
+    }
+
+    .btn-primary {
+      background: white;
+      color: #0758c9;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      transform: translateY(-3px);
+      background: #1ebe5d;
+    }
+
+    /* ================= SECTION ================= */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #12305a;
+    }
+
+    .section-title p {
+      color: #687386;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      color: #0758c9;
+    }
+
+    .about-text p {
+      color: #596579;
+      margin-bottom: 15px;
+    }
+
+    .about-box {
+      background: linear-gradient(135deg,#edf5ff,#e9fff8);
+      padding: 35px;
+      border-radius: 20px;
+      border-left: 5px solid #0758c9;
+    }
+
+    .about-box h3 {
+      color: #0758c9;
+      margin-bottom: 10px;
+    }
+
+    /* ================= SERVICES ================= */
+
+    .services {
+      background: #f7faff;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 30px 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(26,64,112,.08);
+      transition: .3s;
+      border: 1px solid #edf1f7;
+    }
+
+    .service-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 35px rgba(26,64,112,.15);
+    }
+
+    .service-icon {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      color: #12305a;
+      margin-bottom: 8px;
+      font-size: 21px;
+    }
+
+    .service-card p {
+      color: #697586;
+    }
+
+    /* ================= WHY US ================= */
+
+    .why {
+      background: white;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      text-align: center;
+      padding: 25px 15px;
+      border-radius: 15px;
+      background: #f7faff;
+    }
+
+    .why-card strong {
+      display: block;
+      font-size: 19px;
+      color: #0758c9;
+      margin-bottom: 7px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact {
+      background: linear-gradient(135deg,#063f91,#007e66);
+      color: white;
+    }
+
+    .contact .section-title h2 {
+      color: white;
+    }
+
+    .contact .section-title p {
+      color: rgba(255,255,255,.85);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,.11);
+      border: 1px solid rgba(255,255,255,.15);
+      padding: 30px;
+      border-radius: 18px;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 15px;
+      font-size: 23px;
+    }
+
+    .contact-item {
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.13);
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+    }
+
+    .contact-item a {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* ================= CTA ================= */
+
+    .cta {
+      text-align: center;
+      background: #fff;
+    }
+
+    .cta h2 {
+      font-size: 35px;
+      color: #12305a;
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #687386;
+      margin-bottom: 25px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #101a2b;
+      color: #b8c1d1;
+      padding: 35px 0;
+      text-align: center;
+    }
+
+    footer strong {
+      color: white;
+      font-size: 20px;
+    }
+
+    footer p {
+      margin: 7px 0;
+    }
+
+    .footer-links {
+      margin-top: 12px;
+    }
+
+    .footer-links a {
+      margin: 0 8px;
+      color: #dbe4f2;
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 900px) {
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .container {
+        width: 92%;
+      }
+
+      .nav {
+        min-height: 65px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      nav.active {
+        display: block;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 10px 20px rgba(0,0,0,.08);
+      }
+
+      nav.active ul {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      nav.active li {
+        border-bottom: 1px solid #eee;
+      }
+
+      nav.active a {
+        display: block;
+        padding: 13px 25px;
+      }
+
+      .hero {
+        padding: 70px 0;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .section-title h2 {
+        font-size: 29px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .cta h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+  <div class="container nav">
+
+    <div class="logo">
+      ই-সলিউশন <span>পয়েন্ট</span>
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+      <ul>
+        <li><a href="#home">হোম</a></li>
+        <li><a href="#about">আমাদের সম্পর্কে</a></li>
+        <li><a href="#services">সেবাসমূহ</a></li>
+        <li><a href="#contact">যোগাযোগ</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <h1>
+        আপনার প্রয়োজন,<br>
+        <span>আমাদের সমাধান</span>
+      </h1>
+
+      <p>
+        ই-সলিউশন পয়েন্টে পাবেন দ্রুত, সহজ ও নির্ভরযোগ্য
+        অনলাইন এবং ডিজিটাল সেবা।
+      </p>
+
+      <div class="buttons">
+
+        <a href="#services" class="btn btn-primary">
+          আমাদের সেবাসমূহ
+        </a>
+
+        <a href="https://wa.me/8801307720288"
+           class="btn btn-whatsapp"
+           target="_blank">
+          💬 WhatsApp করুন
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>ই-সলিউশন পয়েন্ট সম্পর্কে</h2>
+
+      <p>
+        আপনার প্রয়োজনীয় অনলাইন ও ডিজিটাল কাজকে সহজ ও ঝামেলামুক্ত
+        করাই আমাদের লক্ষ্য।
+      </p>
+
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+
+        <h3>সহজ সেবা, নির্ভরযোগ্য সমাধান</h3>
+
+        <p>
+          প্রযুক্তির এই সময়ে প্রয়োজনীয় সেবা পেতে আর সময় নষ্ট নয়।
+          ই-সলিউশন পয়েন্ট আপনাকে বিভিন্ন অনলাইন, কম্পিউটার ও
+          ডিজিটাল সেবা পেতে সহযোগিতা করে।
+        </p>
+
+        <p>
+          অনলাইন আবেদন, শিক্ষা ও চাকরিসংক্রান্ত কাজ, প্রিন্ট,
+          ফটোকপি, স্ক্যান, ডকুমেন্ট তৈরি এবং বিভিন্ন ডিজিটাল
+          সেবায় আমরা আপনার পাশে আছি।
+        </p>
+
+      </div>
+
+
+      <div class="about-box">
+
+        <h3>👤 ইনচার্জ</h3>
+
+        <p>
+          <strong>মোঃ সজিব মিয়া</strong>
+        </p>
+
+        <br>
+
+        <p>
+          📍 উচাখিলা বাজার স্কুল গেইট<br>
+          ঈশ্বরগঞ্জ, ময়মনসিংহ
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>আমাদের সেবাসমূহ</h2>
+
+      <p>
+        আপনার প্রয়োজনীয় বিভিন্ন অনলাইন ও ডিজিটাল সেবা
+        সহজেই গ্রহণ করুন।
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>অনলাইন আবেদন</h3>
+        <p>
+          বিভিন্ন সরকারি, বেসরকারি ও শিক্ষাপ্রতিষ্ঠানের
+          অনলাইন আবেদন ও ফর্ম পূরণে সহায়তা।
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🖨️</div>
+        <h3>প্রিন্ট ও ফটোকপি</h3>
+        <p>
+          প্রয়োজনীয় ডকুমেন্টের প্রিন্ট, ফটোকপি,
+          স্ক্যান ও ডিজিটাল কপি তৈরির সুবিধা।
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">📄</div>
+        <h3>ডকুমেন্ট সেবা</h3>
+        <p>
+          টাইপিং, PDF তৈরি, ডকুমেন্ট সম্পাদনা,
+          ফরম্যাটিংসহ বিভিন্ন কম্পিউটার সেবা।
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🎓</div>
+        <h3>শিক্ষা সংক্রান্ত সেবা</h3>
+        <p>
+          ভর্তি আবেদন, ফলাফল অনুসন্ধান ও
+          বিভিন্ন শিক্ষাসংক্রান্ত অনলাইন কাজে সহযোগিতা।
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">💼</div>
+        <h3>চাকরির আবেদন</h3>
+        <p>
+          চাকরির অনলাইন আবেদন, CV তৈরি এবং
+          বিভিন্ন নিয়োগসংক্রান্ত কাজে সহযোগিতা।
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>সরকারি অনলাইন সেবা</h3>
+        <p>
+          বিভিন্ন সরকারি ওয়েবসাইটে প্রয়োজনীয়
+          অনলাইন কার্যক্রমে সহযোগিতা।
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>কেন ই-সলিউশন পয়েন্ট?</h2>
+
+      <p>
+        গ্রাহকের প্রয়োজনকে গুরুত্ব দিয়ে আমরা সেবা দেওয়ার চেষ্টা করি।
+      </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div style="font-size:35px;">⚡</div>
+        <strong>দ্রুত সেবা</strong>
+        <p>আপনার সময়ের মূল্য আমরা বুঝি।</p>
+      </div>
+
+
+      <div class="why-card">
+        <div style="font-size:35px;">🤝</div>
+        <strong>নির্ভরযোগ্য</strong>
+        <p>দায়িত্বের সঙ্গে কাজ সম্পন্নের চেষ্টা।</p>
+      </div>
+
+
+      <div class="why-card">
+        <div style="font-size:35px;">😊</div>
+        <strong>সহজ প্রক্রিয়া</strong>
+        <p>জটিল কাজকে সহজভাবে সম্পন্ন করতে সহযোগিতা।</p>
+      </div>
+
+
+      <div class="why-card">
+        <div style="font-size:35px;">📍</div>
+        <strong>সহজে যোগাযোগ</strong>
+        <p>ফোন ও WhatsApp-এ সরাসরি যোগাযোগ।</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>যোগাযোগ করুন</h2>
+
+      <p>
+        আপনার প্রয়োজনীয় সেবা সম্পর্কে জানতে আজই যোগাযোগ করুন।
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+      <!-- ADDRESS -->
+
+      <div class="contact-card">
+
+        <h3>📍 আমাদের ঠিকানা</h3>
+
+        <div class="contact-item">
+
+          <strong>ই-সলিউশন পয়েন্ট</strong><br>
+
+          উচাখিলা বাজার স্কুল গেইট<br>
+          ঈশ্বরগঞ্জ, ময়মনসিংহ<br>
+          বাংলাদেশ
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <strong>ইনচার্জ:</strong><br>
+          মোঃ সজিব মিয়া
+
+        </div>
+
+      </div>
+
+
+      <!-- CONTACT -->
+
+      <div class="contact-card">
+
+        <h3>📞 যোগাযোগের মাধ্যম</h3>
+
+
+        <div class="contact-item">
+
+          📱 <strong>01307720288</strong><br>
+
+          <a href="tel:+8801307720288">
+            📞 কল করুন
+          </a>
+
+          &nbsp; | &nbsp;
+
+          <a href="https://wa.me/8801307720288"
+             target="_blank">
+            💬 WhatsApp
+          </a>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          📱 <strong>01609224171</strong><br>
+
+          <a href="tel:+8801609224171">
+            📞 কল করুন
+          </a>
+
+          &nbsp; | &nbsp;
+
+          <a href="https://wa.me/8801609224171"
+             target="_blank">
+            💬 WhatsApp
+          </a>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          📧
+
+          <a href="mailto:shojib596mia@gmail.com">
+            shojib596mia@gmail.com
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= MAP ================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>আমাদের লোকেশন</h2>
+
+      <p>
+        উচাখিলা বাজার স্কুল গেইট, ঈশ্বরগঞ্জ, ময়মনসিংহ
+      </p>
+
+    </div>
+
+
+    <div style="
+      width:100%;
+      height:350px;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 8px 30px rgba(0,0,0,.12);
+    ">
+
+      <iframe
+        src="https://www.google.com/maps?q=Uchakhila%20Bazar%20School%20Gate%2C%20Ishwarganj%2C%20Mymensingh&output=embed"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>আপনার প্রয়োজন, আমাদের সমাধান</h2>
+
+    <p>
+      অনলাইন ও ডিজিটাল সেবার জন্য আজই আমাদের সঙ্গে যোগাযোগ করুন।
+    </p>
+
+
+    <div class="buttons" style="justify-content:center;">
+
+      <a href="tel:+8801307720288"
+         class="btn"
+         style="background:#0758c9;color:white;">
+        📞 এখনই কল করুন
+      </a>
+
+
+      <a href="https://wa.me/8801609224171"
+         target="_blank"
+         class="btn btn-whatsapp">
+        💬 WhatsApp করুন
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="container">
+
+    <strong>ই-সলিউশন পয়েন্ট</strong>
+
+    <p>
+      সহজ সেবা, নির্ভরযোগ্য সমাধান।
+    </p>
+
+    <p>
+      📍 উচাখিলা বাজার স্কুল গেইট, ঈশ্বরগঞ্জ, ময়মনসিংহ
+    </p>
+
+    <p>
+      📞 01307720288 &nbsp; | &nbsp; 01609224171
+    </p>
+
+    <p>
+      📧 shojib596mia@gmail.com
+    </p>
+
+    <div class="footer-links">
+
+      <a href="tel:+8801307720288">কল করুন</a>
+
+      <a href="https://wa.me/8801307720288" target="_blank">
+        WhatsApp
+      </a>
+
+      <a href="mailto:shojib596mia@gmail.com">
+        Email
+      </a>
+
+    </div>
+
+    <br>
+
+    <p>
+      © 2026 ই-সলিউশন পয়েন্ট | সর্বস্বত্ব সংরক্ষিত
+    </p>
+
+  </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+  function toggleMenu() {
+
+    document.getElementById("menu")
+      .classList.toggle("active");
+
+  }
+
+  // Mobile menu link click করলে menu বন্ধ হবে
+  document.querySelectorAll("nav a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+      document.getElementById("menu")
+        .classList.remove("active");
+
+    });
+
+  });
+
+</script>
+
+</body>
+</html>
